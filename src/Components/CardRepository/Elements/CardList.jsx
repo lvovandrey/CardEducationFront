@@ -1,6 +1,7 @@
+import React from "react";
+import s from './CardList.module.css';
 import Card from "./Card";
-import axios from 'axios';
-import React, { useEffect, useState } from 'react';
+import axios from "axios";
 
 const CardList = () => {
 
@@ -25,10 +26,10 @@ const CardList = () => {
             <h2>Cards:</h2>
             {cards.cardsArray.map((card) => {
                 return (
-                    <Card cardInfo={card}/>
+                    <Card cardInfo={card} />
                 );
             })}
         </ul>);
-};
+}
 
 export default CardList;
